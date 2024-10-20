@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="description" content="Selamat datang di Tailwind Group Indonesia, mari eksplorasi bagaimana Tailwind CSS berkontribusi besar dalam pengembangan situs web di seluruh dunia." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="og:title" content="Beranda | Tailwind Group Indonesia" />
+    <meta name="og:description" content="Selamat datang di Tailwind Group Indonesia, mari eksplorasi bagaimana Tailwind CSS berkontribusi dalam pengembangan situs web di seluruh dunia." />
+    <meta name="og:image" content="" />
+    <title>Beranda | Tailwind Group Indonesia</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <link rel="icon" href="/images/tailwind.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="mx-auto max-w-[1440px] overflow-x-hidden bg-slate-100">
+		<div id="scroll-to-indicator" class="fixed z-40 top-0 h-1 bg-blue-500"></div>
+		<!-- Header -->
+    <header class="mx-auto flex h-28 w-4/5 justify-between text-slate-950">
+      <a href="/" class="grid place-items-center font-semibold">
+        <img src="/images/logo.png" alt="Logo" class="object-contain" loading="lazy" />
+      </a>
+      <nav class="hidden h-full w-4/5 text-lg font-semibold lg:flex lg:w-5/6 lg:items-center lg:justify-end">
+        <a href="/about-us.html" class="mr-14 transition-all duration-300 ease-in-out hover:text-slate-800 hover:underline">
+          About Us
+        </a>
+        <a href="https://play.tailwindcss.com" target="_blank" class="mr-14 transition-all duration-300 ease-in-out hover:text-slate-800 hover:underline">
+          Playground
+        </a>
+        <a href="/login.html" class="rounded-lg bg-slate-300/70 px-6 py-3 transition-all duration-300 ease-in-out hover:bg-slate-300 hover:text-slate-900">
+          Login
+        </a>
+      </nav>
+    </header>
+
+		<!-- Hero -->
+		<section class="mx-auto mt-28 flex h-fit w-4/5 flex-col-reverse items-center justify-center gap-x-20 xl:flex-row xl:justify-between">
+			<div class="mt-10 flex h-full w-full cursor-default flex-col items-center text-justify xl:mt-0 xl:items-start">
+				<h2 class="text-center text-4xl font-bold leading-tight md:text-5xl xl:text-left">
+					Masih Zaman Ngoding
+					<br />
+					Pake CSS?
+				</h2>
+				<h4 class="mt-6 w-full text-xl font-medium [line-height:1.5] [text-align-last:center] md:w-3/5 xl:mt-5 xl:w-full xl:text-2xl xl:[text-align-last:left]">
+					Ubah <em>website</em>-mu yang membosankan menjadi cantik
+					nan <em>eye-catching</em> berkat Tailwind CSS!
+				</h4>
+				<button
+					id="jelajahi-sekarang"
+					class="mt-10 h-fit w-fit cursor-pointer rounded-xl bg-[#d9d9d9] px-9 py-5 text-lg font-bold text-slate-950 transition-all duration-300 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc] hover:bg-slate-300 xl:hover:scale-105"
+				>
+					Coba Sekarang&ensp;<i class="fa-solid fa-arrow-right text-base"></i>
+				</button>
+			</div>
+			<img
+				src="/images/hero.png"
+				alt="Welcome to Sube!"
+				class="-mt-8 h-96 rounded-2xl transition-all duration-300 ease-in-out [box-shadow:_1rem_1rem_0.8rem_#a5a5a5]"
+				loading="lazy"
+			/>
+		</section>
+
+		<!-- Purpose -->
+		<section class="mx-auto mt-40 grid w-4/5 cursor-default grid-cols-1 gap-x-10 text-center lg:grid-cols-2 xl:grid-cols-3">
+      <div class="flex flex-col rounded-2xl bg-slate-800/90 text-slate-50 [box-shadow:_1rem_1rem_0.8rem_#a5a5a5]">
+        <i class="fa-solid fa-chart-line mx-auto -mt-12 grid h-24 w-24 place-items-center rounded-full bg-[#272d37] text-3xl"></i>
+        <h3 class="mx-auto mb-6 mt-3 h-fit w-4/5 text-xl font-bold lg:text-2xl xl:text-xl">
+          Pengembangan Cepat
+        </h3>
+        <h5 class="mx-auto mb-12 h-fit w-4/5 text-justify [text-align-last:_center]">
+          Tailwind memungkinkan styling langsung di HTML sehingga mempercepat
+          proses pengembangan.
+        </h5>
+      </div>
+      <div class="flex flex-col rounded-2xl bg-slate-800/90 text-slate-50 [box-shadow:_1rem_1rem_0.8rem_#a5a5a5]">
+        <i class="fa fa-mobile mx-auto -mt-12 grid h-24 w-24 place-items-center rounded-full bg-[#272d37] text-3xl"></i>
+        <h3 class="mx-auto mb-6 mt-3 h-fit w-4/5 text-xl font-bold lg:text-2xl xl:text-xl">
+          Desain Responsif
+        </h3>
+        <h5 class="mx-auto mb-12 h-fit w-4/5 text-justify [text-align-last:_center]">
+          Dengan <em>breakpoint</em> bawaan, Tailwind memudahkan penyesuaian
+					gaya untuk berbagai ukuran layar.
+        </h5>
+      </div>
+			<div class="flex flex-col rounded-2xl bg-slate-800/90 text-slate-50 [box-shadow:_1rem_1rem_0.8rem_#a5a5a5]">
+        <i class="fa-solid fa-wrench mx-auto -mt-12 grid h-24 w-24 place-items-center rounded-full bg-[#272d37] text-3xl"></i>
+        <h3 class="mx-auto mb-6 mt-3 h-fit w-4/5 text-xl font-bold lg:text-2xl xl:text-xl">
+          Kustomisasi Mudah
+        </h3>
+        <h5 class="mx-auto mb-12 h-fit w-4/5 text-justify [text-align-last:_center]">
+          Tema dan gaya dapat dikustomisasi melalui konfigurasi sederhana untuk
+					keseragaman desain.
+        </h5>
+      </div>
+    </section>
+
+		<!-- Siapa Sangka -->
+		<section class="flex flex-col mt-24"></section>
+
+		<!-- Footer -->
+		<footer class="mt-20 w-full py-4 bg-slate-950 text-center text-white">
+			Tailwind Group Indonesia
+			<br />&copy; 2024
+		</footer>
+
+		<!-- JavaScript -->
+		<script src="/utils/global.js"></script>
+  </body>
+</html>
