@@ -1,24 +1,45 @@
 <!doctype html>
 <html lang="en">
   <head>
-		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta name="description" content="Berkenalan dengan kami, ulik lebih dalam tentang bagaimana komunitas bekerja, dan tetap mengeksplorasi pembelajaran Front End Anda!" />
+    <meta
+      name="description"
+      content="Berkenalan dengan kami, ulik lebih dalam tentang bagaimana komunitas bekerja, dan tetap mengeksplorasi pembelajaran Front End Anda!"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <meta name="og:title" content="Tentang Kami | Tailwind Group Indonesia" />
-    <meta name="og:description" content="Berkenalan dengan kami, ulik lebih dalam tentang bagaimana komunitas bekerja, dan tetap mengeksplorasi pembelajaran Front End Anda!" />
-    <meta name="og:image" content="./images/tailwind.svg" />
+    <meta
+      name="og:description"
+      content="Berkenalan dengan kami, ulik lebih dalam tentang bagaimana komunitas bekerja, dan tetap mengeksplorasi pembelajaran Front End Anda!"
+    />
+    <meta name="og:image" content="./img/tailwind.svg" />
     <title>Tentang Kami | Tailwind Group Indonesia</title>
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/output.css" />
-    <link rel="icon" href="./images/tailwind.svg" type="image/x-icon" />
+    <link rel="icon" href="./img/tailwind.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="mx-auto max-w-[1440px] overflow-x-hidden bg-slate-100">
@@ -33,7 +54,7 @@
     <header class="mx-auto flex h-28 w-4/5 justify-between text-slate-950">
       <span class="absolute right-0 top-0 -z-10 h-96 w-96 bg-teal-500/20 blur-3xl"></span>
       <a href="/" class="grid place-items-center font-semibold">
-        <img src="./images/logo.png" alt="Logo" class="w-40 object-contain lg:w-full" loading="lazy" />
+        <img src="./img/logo.png" alt="Logo" class="w-40 object-contain lg:w-full" loading="lazy" />
       </a>
       <nav class="hidden h-full w-4/5 text-lg font-semibold lg:flex lg:w-5/6 lg:items-center lg:justify-end">
         <a href="about-us.html" class="mr-14 transition-all duration-300 ease-in-out hover:text-slate-800 hover:underline">
@@ -52,9 +73,23 @@
       <i class="fa fa-bars my-auto inline cursor-pointer text-2xl text-slate-950 lg:hidden"></i>
     </header>
 
-    <!--  -->
-    <section></section>
-    
-    <script src="./utils/global.js"></script>
+    <!-- Apa itu Tailwind Group Indonesia -->
+    <section class="mx-auto mt-28 flex h-full w-3/4 cursor-default flex-col lg:flex-row">
+      <h2 class="mr-14 select-auto bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-5xl font-extrabold text-transparent">
+        Apa Itu TGI?
+      </h2>
+      <span class="mr-14 hidden w-0.5 rounded-full bg-slate-900/90 lg:inline"></span>
+      <h4 class="mt-6 text-justify text-lg font-normal lg:mt-0">
+        TGI (Tailwind Group Indonesia) merupakan komunitas pengembang dan
+        desainer web yang berfokus pada penggunaan Tailwind CSS, sebuah
+        framework CSS utility-first yang memudahkan pembuatan antarmuka web yang
+        cepat dan responsif. Komunitas ini bertujuan untuk mempercepat adopsi
+        Tailwind CSS di Indonesia melalui berbagi pengetahuan, tutorial, dan
+        praktik terbaik dalam pengembangan web modern. Tailwind Group Indonesia
+        juga menyediakan ruang kolaborasi dan diskusi untuk para pengembang dari
+        berbagai tingkat keahlian, mulai dari pemula hingga profesional.
+      </h4>
+    </section>
+    <script src="./js/global.js"></script>
   </body>
 </html>
