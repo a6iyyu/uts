@@ -2,11 +2,11 @@
 const CountUpNumber = (number, time, element) => {
   if (!number || !time || number <= 0) return null;
 
+  const current_element = document.getElementById(element);
   const interval_time = 1000 / 60; // Set 60 FPS untuk animasi yang lebih halus
   let current_number = 0;
-  const current_element = document.getElementById(element);
   const increment = number / (time * 1000 / interval_time); // Jumlah total langkah iterasi
-  console.log(increment)
+
   const format_number = number => {
     if (number >= 1e6) return (number / 1e6).toFixed(1) + "\u00A0JT";
     else if (number >= 1e3) return (number / 1e3).toFixed(1) + "\u00A0RB";
