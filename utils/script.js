@@ -19,6 +19,3 @@ document.getElementById("mulai-belanja").addEventListener("click", () => {
 // Tinggi Otomatis Pada Textarea
 const textarea = document.getElementById("deskripsi");
 if (textarea) textarea.style.height = "auto", textarea.style.height = `${textarea.scrollHeight}px`;
-
-// Validasi Formulir
-const nama_produk = document.getElementById("nama_produk");

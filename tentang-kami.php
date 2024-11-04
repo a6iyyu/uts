@@ -8,10 +8,10 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <meta name="og:title" content="Tentang Kami | MUSIKin" />
+    <meta name="og:title" content="Tentang Kami | musikin" />
     <meta name="og:description" content="" />
     <meta name="og:image" content="" />
-    <title>Tentang Kami | MUSIKin</title>
+    <title>Tentang Kami | musikin</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="style/output.css" />
     <link rel="icon" href="" type="image/x-icon" />
@@ -28,7 +28,7 @@
     <header class="mx-auto flex h-28 w-4/5 justify-between text-slate-950">
         <span class="absolute right-0 top-0 -z-10 h-96 w-96 bg-teal-500/20 blur-3xl"></span>
         <a href="index.php" class="my-auto grid place-items-center select-auto bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-4xl font-black text-transparent">
-            MUSIKin
+            musikin
         </a>
         <nav class="hidden h-full w-4/5 text-lg font-semibold lg:flex lg:w-5/6 lg:items-center lg:justify-end">
             <a href="tentang-kami.php" class="mr-14 transition-all duration-300 ease-in-out hover:text-slate-800 hover:underline">
@@ -43,17 +43,17 @@
 
     <section class="mx-auto my-28 flex h-full w-3/4 cursor-default flex-col lg:flex-row">
         <h2 class="mr-14 select-auto bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-5xl font-extrabold text-transparent">
-            Apa Itu MUSIKin?
+            Apa Itu musikin?
         </h2>
         <h4 class="mt-6 text-justify text-lg font-normal lg:mt-0">
-            MUSIKin adalah platform e-commerce yang berfokus pada penyediaan
+            musikin adalah platform e-commerce yang berfokus pada penyediaan
             alat musik berkualitas tinggi untuk semua kalangan, mulai dari
             pemula hingga musisi profesional. Dengan menggunakan antarmuka yang
-            intuitif dan responsif, MUSIKin bertujuan untuk memudahkan pengguna
+            intuitif dan responsif, musikin bertujuan untuk memudahkan pengguna
             dalam menemukan dan membeli alat musik pilihan mereka. Platform ini
             tidak hanya berfokus pada penjualan, tetapi juga bertujuan untuk
             meningkatkan pengetahuan musik di Indonesia melalui berbagai sumber
-            daya, ulasan produk, dan panduan bagi calon musisi. MUSIKin
+            daya, ulasan produk, dan panduan bagi calon musisi. musikin
             menyediakan ruang yang nyaman bagi pengguna untuk berdiskusi,
             berbagi pengalaman, dan memperdalam pemahaman mereka tentang
             dunia musik.
@@ -62,12 +62,8 @@
 
     <!-- Footer -->
     <footer class="mt-auto w-full flex flex-col cursor-default bg-slate-950 py-4 text-center text-white">
-        <h5>&copy; MUSIKin 2024</h5>
-        <div class="flex items-center justify-center">
-            <a href="https://github.com/a6iyyu" target="_blank" class="transition-all duration-300 ease-in-out xl:hover:underline xl:hover:text-slate-200">Rafi Abiyyu Airlangga</a>
-            &emsp;|&emsp;
-            <a href="https://github.com/NathanaelGracedo" target="_blank" class="transition-all duration-300 ease-in-out xl:hover:underline xl:hover:text-slate-200">Nathanael Juan Gracedo</a>
-        </div>
+        <h5>&copy; musikin 2024</h5>
+        <a href="https://github.com/a6iyyu" target="_blank" class="mx-auto w-fit transition-all duration-300 ease-in-out xl:hover:underline xl:hover:text-slate-200">Rafi Abiyyu Airlangga</a>
     </footer>
     <script src="utils/script.js"></script>
 </body>

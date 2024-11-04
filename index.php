@@ -11,7 +11,7 @@
     <meta name="og:title" content="" />
     <meta name="og:description" content="" />
     <meta name="og:image" content="" />
-    <title>Beranda | MUSIKin</title>
+    <title>Beranda | musikin</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="style/output.css" />
     <link rel="icon" href="" type="image/x-icon" />
@@ -23,13 +23,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="mx-auto max-w-[1440px] overflow-x-hidden bg-slate-100">
+<body class="mx-auto flex flex-col max-w-[1440px] min-h-screen overflow-x-hidden bg-slate-100">
     <div id="scroll-indicator" class="fixed z-40 top-0 h-1 bg-blue-500"></div>
     <!-- Header -->
     <header class="mx-auto flex h-28 w-4/5 justify-between text-slate-950">
         <span class="absolute right-0 top-0 -z-10 h-96 w-96 bg-teal-500/20 blur-3xl"></span>
         <a href="index.php" class="my-auto grid place-items-center select-auto bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-4xl font-black text-transparent">
-            MUSIKin
+            musikin
         </a>
         <nav class="hidden h-full w-4/5 text-lg font-semibold lg:flex lg:w-5/6 lg:items-center lg:justify-end">
             <a href="tentang-kami.php" class="mr-14 transition-all duration-300 ease-in-out hover:text-slate-800 hover:underline">
@@ -47,7 +47,7 @@
         <h2 class="cursor-default font-black text-center text-4xl">
             Temukan Alunan Harmoni di
             <span class="select-auto bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-4xl font-black text-transparent">
-                MUSIKin
+                musikin
             </span>
         </h2>
         <h4 class="mt-6 w-full cursor-default text-center text-xl lg:w-4/5">
@@ -60,8 +60,8 @@
     <hr class="mx-auto my-28 h-0.5 w-4/5 bg-slate-950" />
 
     <!-- List Of rows -->
-    <main class="mx-auto mb-48 w-4/5 flex flex-col" id="daftar-alat-musik">
-        <span class="absolute left-0 top-[75rem] -z-10 h-96 w-96 bg-teal-500/20 blur-3xl"></span>
+    <main class="mx-auto mb-24 w-4/5 flex flex-col" id="daftar-alat-musik">
+        <span class="absolute left-0 top-[40rem] -z-10 h-96 w-96 bg-teal-500/20 blur-3xl"></span>
         <section class="cursor-default font-bold text-center text-4xl">
             Daftar Alat Musik
         </section>
@@ -69,17 +69,17 @@
             <?php
             include "utils/connection.php";
 
-            $sql = "select * from Produk";
+            $sql = "SELECT * FROM Produk";
             $stmt = sqlsrv_query($conn, $sql);
-    
+
             while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
                 // Menampilkan produk dengan onclick yang akan memanggil fungsi JavaScript untuk membuka modal
-                 $produk_id = $row['ProdukID'];
-                if  ($row['Gambar'] > 0) {
+                $produk_id = $row['ProdukID'];
+                if ($row['Gambar'] > 0) {
                     $base64Image = base64_encode($row['Gambar']);
-                
-                echo
-                "<figure class='w-full flex cursor-pointer flex-col items-center justify-center py-10 rounded-xl bg-slate-100 border-2 border-slate-950/30'>
+
+                    echo
+                    "<figure class='w-full flex cursor-pointer flex-col items-center justify-center py-10 rounded-xl bg-slate-100 border-2 border-slate-950/30'>
                     <img src='data:image/jpeg;base64, $base64Image' alt='Gambar Produk' class='w-4/5 rounded-2xl transition-all duration-300 ease-in-out xl:hover:scale-105' />
                     <div class='mx-auto mt-4 w-4/5 flex flex-col'>
                         <div class='flex items-center justify-between'>
@@ -119,13 +119,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full flex flex-col cursor-default bg-slate-950 py-4 text-center text-white">
-        <h5>&copy; MUSIKin 2024</h5>
-        <div class="flex items-center justify-center">
-            <a href="https://github.com/a6iyyu" target="_blank" class="transition-all duration-300 ease-in-out xl:hover:underline xl:hover:text-slate-200">Rafi Abiyyu Airlangga</a>
-            &emsp;|&emsp;
-            <a href="https://github.com/NathanaelGracedo" target="_blank" class="transition-all duration-300 ease-in-out xl:hover:underline xl:hover:text-slate-200">Nathanael Juan Gracedo</a>
-        </div>
+    <footer class="mt-auto w-full flex flex-col cursor-default bg-slate-950 py-4 text-center text-white">
+        <h5>&copy; musikin 2024</h5>
+        <a href="https://github.com/a6iyyu" target="_blank" class="mx-auto w-fit transition-all duration-300 ease-in-out xl:hover:underline xl:hover:text-slate-200">Rafi Abiyyu Airlangga</a>
     </footer>
     <script src="utils/script.js"></script>
 </body>
