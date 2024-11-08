@@ -61,7 +61,7 @@
 
     <!-- List Of rows -->
     <main class="mx-auto mb-24 w-4/5 flex flex-col" id="daftar-alat-musik">
-        <span class="absolute left-0 top-[40rem] -z-10 h-96 w-96 bg-teal-500/20 blur-3xl"></span>
+        <span class="absolute left-0 top-80 -z-10 h-96 w-96 bg-teal-500/20 blur-3xl"></span>
         <section class="cursor-default font-bold text-center text-4xl">
             Daftar Alat Musik
         </section>
